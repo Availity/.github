@@ -1,0 +1,6 @@
+{
+  "name": "Artifactory Check Workflow",
+  "description": "Availity CI workflow template for checking private registries.",
+  "icon-name": "jfrog-icon",
+  "filePatterns": ["yarn.lock"]
+}

@@ -1,0 +1,20 @@
+name: Artifactory Check CI
+
+on:
+  push:
+    branches: [$default-branch]
+  pull_request:
+    types:
+      - opened
+      - synchronize
+    branches: [$default-branch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run script to check for private registries
+        run: sh ../artifactory-check.sh
