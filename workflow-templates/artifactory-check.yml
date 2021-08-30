@@ -24,4 +24,6 @@ jobs:
           token: ${{ secrets.BOT_TOKEN}}
           # Relative path under $GITHUB_WORKSPACE to place the repository
           path: scripts
+
+      - name: Run registry checker
         run: sh ./scripts/artifactory-check.sh
