@@ -10,8 +10,10 @@ on:
     branches: [$default-branch]
 
 jobs:
-  build:
+  check:
     runs-on: ubuntu-latest
+    if: ${{ github.actor == 'dependabot[bot]' }}
+    run: echo "Dependabot detected, skipping rest of job"
 
     steps:
       - name: Checkout current repo
