@@ -1,0 +1,5 @@
+{
+  "name": "Dependabot Build Workflow",
+  "description": "Availity CI workflow template for checking building Dependabot PRs.",
+  "icon-name": "dependabot-icon"
+}
